@@ -1,7 +1,6 @@
 import * as cdk from "aws-cdk-lib";
 import { KubectlLayer } from 'aws-cdk-lib/lambda-layer-kubectl';
 
-
 import eks = require("aws-cdk-lib/aws-eks");
 import * as ssm from "aws-cdk-lib/aws-ssm";
 import {
