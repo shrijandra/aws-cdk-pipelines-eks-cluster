@@ -19,7 +19,7 @@ export class EksPipelineStack extends cdk.Stack {
     const pipeline = new CodePipeline(this, "Pipeline", {
       synth: new ShellStep("Synth", {
         input: CodePipelineSource.gitHub(
-          "shrijandra/aws-cdk-pipelines-eks-cluste",
+          "shrijandra/aws-cdk-pipelines-eks-cluster",
           "main",
           {
             authentication:
