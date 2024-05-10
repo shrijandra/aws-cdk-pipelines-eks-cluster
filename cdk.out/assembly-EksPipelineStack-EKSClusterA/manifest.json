@@ -1,0 +1,837 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "EksPipelineStackEKSClusterAEKSClusterC0C47102.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "EksPipelineStackEKSClusterAEKSClusterC0C47102.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "EksPipelineStackEKSClusterAEKSClusterC0C47102": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://728878640057/us-east-2",
+      "properties": {
+        "templateFile": "EksPipelineStackEKSClusterAEKSClusterC0C47102.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "Application": "EKSCluster",
+          "Environment": "EKSClusterA"
+        },
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-deploy-role-728878640057-us-east-2",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-cfn-exec-role-728878640057-us-east-2",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-728878640057-us-east-2/eb74a0842107bc83eeed43b0a469a527a0770108562f7a286f1b9efaa404ec36.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "EksPipelineStackEKSClusterAEKSClusterC0C47102.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-lookup-role-728878640057-us-east-2",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "EKSClusterA-EKSCluster"
+      },
+      "dependencies": [
+        "EksPipelineStackEKSClusterAEKSClusterC0C47102.assets"
+      ],
+      "metadata": {
+        "/EksPipelineStack/EKSClusterA/EKSCluster": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "Application",
+                "Value": "EKSCluster"
+              },
+              {
+                "Key": "Environment",
+                "Value": "EKSClusterA"
+              }
+            ]
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1Subnet5C2D37C4"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTable6C95E38E"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTableAssociation97140677"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1DefaultRoute3DA9E72A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1EIPD7E02669"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NATGateway4D7517AA"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2Subnet691E08A3"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTable94F7E489"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTableAssociationDD5762D8"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2DefaultRoute97F91067"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2EIP3C605A87"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2NATGateway9182C01D"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet3SubnetBE12F0B6"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet3RouteTable93458DBB"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet3RouteTableAssociation1F1EDF02"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet3DefaultRoute4697774F"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet3/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet3EIP3A666A23"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PublicSubnet3/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet3NATGateway7640CD1D"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1Subnet536B997A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableB2C5B500"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableAssociation70C59FA6"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1DefaultRouteBE02A9ED"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2Subnet3788AAA1"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableA678073B"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableAssociationA89CAD56"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2DefaultRoute060D2087"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet3SubnetF258B56E"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet3RouteTableD98824C7"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet3RouteTableAssociation16BDDC43"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/PrivateSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet3DefaultRoute94B74F0D"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIGWD7BA715C"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcVPCGWBF912B6E"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "You created a cluster with Kubernetes Version 1.28 without specifying the kubectlLayer property. This may cause failures as the kubectl version provided with aws-cdk-lib is 1.20, which is only guaranteed to be compatible with Kubernetes versions 1.19-1.21. Please provide a kubectlLayer from @aws-cdk/lambda-layer-kubectl-v28. [ack: @aws-cdk/aws-eks:clusterKubectlLayerNotSpecified]",
+            "trace": [
+              "Annotations.addMessage (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new Cluster (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\node_modules\\aws-cdk-lib\\aws-eks\\lib\\cluster.js:1:9523)",
+              "new EksClusterStack (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\lib\\eks-cluster-stack.ts:29:21)",
+              "new EksClusterStage (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\lib\\eks-cluster-stage.ts:18:5)",
+              "new EksPipelineStack (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\lib\\eks-pipeline-stack.ts:39:30)",
+              "Object.<anonymous> (C:\\Users\\shrijandra\\EKS\\AWS CDK\\aws-cdk-pipelines-eks-cluster\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1369:14)",
+              "Module.m._compile (C:\\Users\\shrijandra\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1427:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\shrijandra\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1206:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1022:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (C:\\Users\\shrijandra\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:649:14)",
+              "bootstrap (C:\\Users\\shrijandra\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:95:10)",
+              "main (C:\\Users\\shrijandra\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:55:10)",
+              "Object.<anonymous> (C:\\Users\\shrijandra\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1369:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1427:10)",
+              "Module.load (node:internal/modules/cjs/loader:1206:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1022:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/KubectlHandlerRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueKubectlHandlerRole2F8DB300"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/KubectlHandlerRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueKubectlHandlerRoleDefaultPolicy62F8F1D9"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueRole2CC5371F"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/ControlPlaneSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueControlPlaneSecurityGroup6DC87040"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/Resource/CreationRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueCreationRole069962C0"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/Resource/CreationRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueCreationRoleDefaultPolicy433077B7"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/Resource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueAE8AA3F8"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/KubectlReadyBarrier": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueKubectlReadyBarrierDFD9DF2C"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/HasEcrPublic": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueHasEcrPublic88A052F1"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/Nodegroupapp-ng/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueNodegroupappng6C1DAFDB"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/AwsAuth/manifest/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueAwsAuthmanifest9BE53312"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-load-balancer-controller/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawsloadbalancercontrollerConditionJsonAC9F25D6"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-load-balancer-controller/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawsloadbalancercontrollerRoleF54E9289"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-load-balancer-controller/manifest-aws-load-balancer-controllerServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawsloadbalancercontrollermanifestawsloadbalancercontrollerServiceAccountResource94C78BEA"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/OpenIdConnectProvider/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueOpenIdConnectProvider03F45DBD"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-AwsLoadBalancerController/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartAwsLoadBalancerController65A19C04"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/external-dns/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueexternaldnsConditionJson28081A1F"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/external-dns/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueexternaldnsRole2CBD42CD"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/external-dns/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueexternaldnsRoleDefaultPolicy6E0C35EC"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/external-dns/manifest-external-dnsServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueexternaldnsmanifestexternaldnsServiceAccountResource17D6D002"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-ExternalDns/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartExternalDns0FCF8750"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/cluster-autoscaler/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueclusterautoscalerConditionJson853B9DC1"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/cluster-autoscaler/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueclusterautoscalerRoleE3A20514"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/cluster-autoscaler/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueclusterautoscalerRoleDefaultPolicyAE7335FE"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/cluster-autoscaler/manifest-cluster-autoscalerServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueclusterautoscalermanifestclusterautoscalerServiceAccountResourceCE8D663A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-ClusterAutoscaler/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartClusterAutoscalerB26E1ABF"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-MetricsServer/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartMetricsServerAF56D345"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/manifest-amazon-cloudwatch/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluemanifestamazoncloudwatch9C4E3CC6"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-cloudwatch-metrics/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawscloudwatchmetricsConditionJson766446DA"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-cloudwatch-metrics/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawscloudwatchmetricsRole16ED1F54"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-cloudwatch-metrics/manifest-aws-cloudwatch-metricsServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawscloudwatchmetricsmanifestawscloudwatchmetricsServiceAccountResourceAD8ADE91"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-AwsCloudWatchMetrics/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartAwsCloudWatchMetricsC8A8F3F7"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-for-fluent-bit/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawsforfluentbitConditionJsonB17A2979"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-for-fluent-bit/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawsforfluentbitRole238C4F4A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/aws-for-fluent-bit/manifest-aws-for-fluent-bitServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmeblueawsforfluentbitmanifestawsforfluentbitServiceAccountResource6EC3EEB2"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-AwsForFluentBit/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartAwsForFluentBit0F4CA427"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-Calico/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartCalico40E26327"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/chart-Prometheus/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluechartPrometheus10480673"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/acme-blue/manifest-echoserver/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "acmebluemanifestechoserver76EE31C1"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/NodeProxyAgentLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NodeProxyAgentLayer924C1971"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandlerServiceRole15A26729"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandler42BEBAE0"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandlerServiceRole5810CC58"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandler7073F4DA"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRole9FF04296"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEvent83C1D0A7"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisCompleteServiceRoleB1087139"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisCompleteServiceRoleDefaultPolicy2E7140AC"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisComplete26D7B0CB"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeoutServiceRole28643D26"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeoutServiceRoleDefaultPolicy2688969F"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeout0B47CA38"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineRole0C7159F9"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineRoleDefaultPolicyD3C3DA1A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineLogGroupDD693A98"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Providerwaiterstatemachine5D4A9DF0"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/EksPipelineStackEKSClusterAEKSClusterawscdkawseksClusterResourceProviderOnEventHandlerServiceRole763A4157Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksPipelineStackEKSClusterAEKSClusterawscdkawseksClusterResourceProviderOnEventHandlerServiceRole763A4157Arn"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/EksPipelineStackEKSClusterAEKSClusterawscdkawseksClusterResourceProviderIsCompleteHandlerServiceRole3F4B5BA5Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksPipelineStackEKSClusterAEKSClusterawscdkawseksClusterResourceProviderIsCompleteHandlerServiceRole3F4B5BA5Arn"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/EksPipelineStackEKSClusterAEKSClusterawscdkawseksClusterResourceProviderframeworkonEventDB56395AArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksPipelineStackEKSClusterAEKSClusterawscdkawseksClusterResourceProviderframeworkonEventDB56395AArn"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awscdkawseksClusterResourceProviderNestedStackawscdkawseksClusterResourceProviderNestedStackResource9827C454"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Handler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Handler886CB40B"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwsCliLayerF44AAF94"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/KubectlLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubectlLayer600207B5"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRole9FF04296"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEvent83C1D0A7"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/EksPipelineStackEKSClusterAEKSClusterawscdkawseksKubectlProviderframeworkonEvent79CAF00FArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksPipelineStackEKSClusterAEKSClusterawscdkawseksKubectlProviderframeworkonEvent79CAF00FArn"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/reference-to-EksPipelineStackEKSClusterAEKSClusteracmeblueKubectlHandlerRole163599B8Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoEksPipelineStackEKSClusterAEKSClusteracmeblueKubectlHandlerRole163599B8Arn"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/reference-to-EksPipelineStackEKSClusterAEKSClusterVpcPrivateSubnet1SubnetBA6469AARef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoEksPipelineStackEKSClusterAEKSClusterVpcPrivateSubnet1SubnetBA6469AARef"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/reference-to-EksPipelineStackEKSClusterAEKSClusterVpcPrivateSubnet2SubnetADA63100Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoEksPipelineStackEKSClusterAEKSClusterVpcPrivateSubnet2SubnetADA63100Ref"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/reference-to-EksPipelineStackEKSClusterAEKSClusterVpcPrivateSubnet3Subnet4CA62B35Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoEksPipelineStackEKSClusterAEKSClusterVpcPrivateSubnet3Subnet4CA62B35Ref"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/reference-to-EksPipelineStackEKSClusterAEKSClusteracmeblue2792BF74ClusterSecurityGroupId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoEksPipelineStackEKSClusterAEKSClusteracmeblue2792BF74ClusterSecurityGroupId"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awscdkawseksKubectlProviderNestedStackawscdkawseksKubectlProviderNestedStackResourceA7AEBA6B"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/awsNodeOIDCCondition/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsNodeOIDCCondition74DFD06C"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/AWSCDKCfnUtilsProviderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCDKCfnUtilsProviderCustomResourceProviderRoleFE0EE867"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/AWSCDKCfnUtilsProviderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCDKCfnUtilsProviderCustomResourceProviderHandlerCF82AA57"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/awsNodeIamRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsNodeIamRole54BF7F8A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/serviceAccount--aws-node/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serviceAccountawsnodeB4C7E40C"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/EksManagedNodeGroup/SSMLaunchTemplate": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksManagedNodeGroupSSMLaunchTemplate1802D734"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/EksManagedNodeGroup/EksNodeRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksManagedNodeGroupEksNodeRole620FF31A"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/AWSLoadBalancerController/AWSLoadBalancerControllerIAMPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSLoadBalancerControllerAWSLoadBalancerControllerIAMPolicy5434DB0C"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/SsmParameterValue:--eks-cdk-pipelines--hostZoneId:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueekscdkpipelineshostZoneIdC96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/SsmParameterValue:--eks-cdk-pipelines--zoneName:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueekscdkpipelineszoneNameC96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/EksPipelineStack/EKSClusterA/EKSCluster/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "EksPipelineStack/EKSClusterA/EKSCluster"
+    }
+  }
+}

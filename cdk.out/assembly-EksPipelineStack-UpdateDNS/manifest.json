@@ -1,0 +1,97 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "EksPipelineStackUpdateDNSAppDnsEBA64D87": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://728878640057/us-east-2",
+      "properties": {
+        "templateFile": "EksPipelineStackUpdateDNSAppDnsEBA64D87.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "Application": "AppDns",
+          "Environment": "UpdateDNS"
+        },
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-deploy-role-728878640057-us-east-2",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-cfn-exec-role-728878640057-us-east-2",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-728878640057-us-east-2/6169f3beb472a6707b4da7c026882e3a75567fdd32441309e02d2dd003de940b.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-lookup-role-728878640057-us-east-2",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "UpdateDNS-AppDns"
+      },
+      "dependencies": [
+        "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets"
+      ],
+      "metadata": {
+        "/EksPipelineStack/UpdateDNS/AppDns": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "Application",
+                "Value": "AppDns"
+              },
+              {
+                "Key": "Environment",
+                "Value": "UpdateDNS"
+              }
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/SsmParameterValue:--eks-cdk-pipelines--hostZoneId:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueekscdkpipelineshostZoneIdC96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/SsmParameterValue:--eks-cdk-pipelines--zoneName:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueekscdkpipelineszoneNameC96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/appCnameRecord/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "appCnameRecord922E8112"
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "EksPipelineStack/UpdateDNS/AppDns"
+    }
+  }
+}

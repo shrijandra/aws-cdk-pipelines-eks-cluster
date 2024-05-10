@@ -1,0 +1,93 @@
+{
+ "Parameters": {
+  "SsmParameterValueekscdkpipelineshostZoneIdC96584B6F00A464EAD1953AFF4B05118Parameter": {
+   "Type": "AWS::SSM::Parameter::Value<String>",
+   "Default": "/eks-cdk-pipelines/hostZoneId"
+  },
+  "SsmParameterValueekscdkpipelineszoneNameC96584B6F00A464EAD1953AFF4B05118Parameter": {
+   "Type": "AWS::SSM::Parameter::Value<String>",
+   "Default": "/eks-cdk-pipelines/zoneName"
+  },
+  "BootstrapVersion": {
+   "Type": "AWS::SSM::Parameter::Value<String>",
+   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+  }
+ },
+ "Resources": {
+  "appCnameRecord922E8112": {
+   "Type": "AWS::Route53::RecordSet",
+   "Properties": {
+    "HostedZoneId": {
+     "Ref": "SsmParameterValueekscdkpipelineshostZoneIdC96584B6F00A464EAD1953AFF4B05118Parameter"
+    },
+    "Name": {
+     "Fn::Join": [
+      "",
+      [
+       "app.",
+       {
+        "Ref": "SsmParameterValueekscdkpipelineszoneNameC96584B6F00A464EAD1953AFF4B05118Parameter"
+       },
+       "."
+      ]
+     ]
+    },
+    "ResourceRecords": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "echoserver.green.",
+        {
+         "Ref": "SsmParameterValueekscdkpipelineszoneNameC96584B6F00A464EAD1953AFF4B05118Parameter"
+        }
+       ]
+      ]
+     }
+    ],
+    "TTL": "30",
+    "Type": "CNAME"
+   },
+   "Metadata": {
+    "aws:cdk:path": "EksPipelineStack/UpdateDNS/AppDns/appCnameRecord/Resource"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/yWLQQrDIBBFz5K9To1pT5ALFHOAMtUpmFSFcWwWIXcvwdV/D963MN4NmAH3qn3Y9De+4VgE/abmT34iYyIhVo5qaexJ4V5fXJrQY4JjzpjIkS8crrzTQnJ265dT5RII1nr7WQOjBTusNUbNLUtMBK7vH8XckmSKAAAA"
+   },
+   "Metadata": {
+    "aws:cdk:path": "EksPipelineStack/UpdateDNS/AppDns/CDKMetadata/Default"
+   }
+  }
+ },
+ "Rules": {
+  "CheckBootstrapVersion": {
+   "Assertions": [
+    {
+     "Assert": {
+      "Fn::Not": [
+       {
+        "Fn::Contains": [
+         [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+         ],
+         {
+          "Ref": "BootstrapVersion"
+         }
+        ]
+       }
+      ]
+     },
+     "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+    }
+   ]
+  }
+ }
+}

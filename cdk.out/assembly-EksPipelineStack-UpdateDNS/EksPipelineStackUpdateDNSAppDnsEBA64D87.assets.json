@@ -1,0 +1,20 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "6169f3beb472a6707b4da7c026882e3a75567fdd32441309e02d2dd003de940b": {
+      "source": {
+        "path": "EksPipelineStackUpdateDNSAppDnsEBA64D87.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "728878640057-us-east-2": {
+          "bucketName": "cdk-hnb659fds-assets-728878640057-us-east-2",
+          "objectKey": "6169f3beb472a6707b4da7c026882e3a75567fdd32441309e02d2dd003de940b.json",
+          "region": "us-east-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::728878640057:role/cdk-hnb659fds-file-publishing-role-728878640057-us-east-2"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
