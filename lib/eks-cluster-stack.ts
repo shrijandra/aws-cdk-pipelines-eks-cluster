@@ -105,7 +105,7 @@ export class EksClusterStack extends cdk.Stack {
       hostZoneId: hostZoneId,
       domainFilters: [`${props.nameSuffix}.${zoneName}`],
     });
-
+/*
     new ClusterAutoscaler(this, "ClusterAutoscaler", {
       cluster: cluster,
     });
@@ -126,6 +126,6 @@ export class EksClusterStack extends cdk.Stack {
       cluster: cluster,
       nameSuffix: props.nameSuffix,
       domainName: zoneName,
-    });
+    });  */
   }
 }
